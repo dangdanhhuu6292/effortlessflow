@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Effortless Flow</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- Header Navigation -->
+    <header class="w-full bg-white border-b border-slate-100 py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <div class="h-8 w-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm">E</div>
+            <span class="font-bold text-slate-900 text-sm">Effortless Flow</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs font-semibold">
+            <a href="landing_en.html" class="text-slate-500 hover:text-indigo-600 transition">Home</a>
+            <span class="text-slate-300">|</span>
+            <div class="flex items-center gap-1.5">
+                <a href="privacy.html" class="text-xs font-bold text-slate-400 hover:text-indigo-600 transition">VI</a>
+                <span class="text-slate-300">/</span>
+                <span class="text-xs font-bold text-indigo-600">EN</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-12">
+            <div class="inline-flex items-center justify-center h-16 w-16 rounded-3xl bg-indigo-600 text-white text-3xl font-black shadow-lg shadow-indigo-200 mb-4">E</div>
+            <h1 class="text-3xl font-black text-slate-900 tracking-tight">Privacy Policy</h1>
+            <p class="text-slate-500 mt-2 text-sm">Last updated: July 08, 2026</p>
+        </header>
+
+        <main class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100 space-y-8">
+            
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    1. Overview
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Welcome to <strong>Effortless Flow</strong>. We are fully committed to protecting your privacy and Google user data. This privacy policy clearly discloses how our Google Sheets Add-on accesses, uses, stores, or shares Google user data.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    2. Google User Data Accessed (Data Accessed)
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    To deliver document automation and OCR features, Effortless Flow requires access to the following Google user data via authorized OAuth scopes:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
+                    <li><strong>Google Sheets (spreadsheets scope)</strong>: The application reads configuration data and automatically writes extracted invoice metadata (such as invoice number, date, amount, vendor details, and items) directly into your active spreadsheets.</li>
+                    <li><strong>Google Documents (documents scope)</strong>: The application accesses template documents to read structure and automatically generates/writes new document drafts or PDF invoice exports from row details approved by you.</li>
+                    <li><strong>Google Drive (drive or drive.readonly scope)</strong>: The application accesses files (raw invoice images and PDF scans) stored inside your designated Google Drive folder for OCR processing and saves the output logs.</li>
+                    <li><strong>Gmail Service (script.send_mail scope)</strong>: The application utilizes Google's mailing service to send automated processing reports, billing receipts, and status logs to your email address. The application <strong>does not read, retrieve, or collect</strong> any incoming emails in your inbox.</li>
+                    <li><strong>External Network Request (script.external_request scope)</strong>: The application connects to external servers to call the secure Google Gemini API for OCR analysis and to validate subscription licenses.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    3. How Google User Data is Used & Processed (Data Usage)
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    We process your Google user data according to the following strict principles:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
+                    <li>Invoice images or PDF files loaded from your designated Google Drive are converted temporarily into binary streams in order to execute the OCR request.</li>
+                    <li>Extracted metadata text returned by the Google Gemini API is solely used to format your spreadsheet rows and match bank records.</li>
+                    <li>Email addresses are only utilized to transmit operational log reports and verify license status.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    4. Data Storage Policies (Data Storage)
+                </h2>
+                <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
+                    <li><strong>Zero-File Retention</strong>: We do not own, copy, clone, or store any of your invoice documents on our external servers. All data assets remain fully on your own Google Drive storage.</li>
+                    <li>Configuration metadata (such as Folder IDs or mapping preferences) is stored in the script's `UserProperties` scope managed securely by Google.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    5. Data Sharing with Third Parties (Data Sharing)
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Effortless Flow **never shares, sells, transfers, or rents your Google user data to any third-party services**.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    The only data transfer is the invoice binary stream transmitted to the secure Google Gemini API endpoint (to execute the core OCR feature) and to the electronic invoice portal API (e.g. MISA, VNPT, Viettel) that you manually configure in your settings. All data transfers are strictly encrypted using HTTPS protocols.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    6. User Rights and Controls
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    You have complete control over your credentials and can uninstall the Effortless Flow Add-on from your Google Workspace dashboard at any time. Once uninstalled, all locally saved credentials and configurations are permanently erased.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    7. Support Contacts
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    If you have questions regarding this policy or the add-on data interaction, please reach out via:
+                </p>
+                <div class="mt-4 bg-slate-50 rounded-2xl p-4 border border-slate-100 inline-block text-sm font-semibold text-slate-700">
+                    <p>📧 Email: support@easyinvoice-addons.local</p>
+                    <p class="mt-1">💬 Telegram: @dangdanhhuu6292</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center text-xs text-slate-400 mt-12">
+            <p>&copy; 2026 Effortless Flow. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

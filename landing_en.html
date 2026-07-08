@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effortless Flow - Automate Invoices with Gemini AI OCR</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-[#fafbff] text-slate-800 antialiased font-sans">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glassmorphism border-b border-indigo-50/60 py-4 px-6 md:px-12 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center font-black text-xl shadow-md shadow-indigo-150">E</div>
+            <span class="font-outfit font-extrabold text-xl tracking-tight text-slate-900">Effortless Flow</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+            <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+            <a href="#workflow" class="hover:text-indigo-600 transition">Workflow</a>
+            <a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a>
+            <a href="privacy_en.html" class="hover:text-indigo-600 transition">Privacy Policy</a>
+            <div class="flex items-center gap-1.5 border-l pl-4 border-slate-200">
+                <a href="index.html" class="text-xs font-bold text-slate-400 hover:text-indigo-600 transition">VI</a>
+                <span class="text-slate-300">/</span>
+                <span class="text-xs font-bold text-indigo-600">EN</span>
+            </div>
+        </nav>
+        <div>
+            <a href="#pricing" class="bg-indigo-600 hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-100 text-white font-bold py-2.5 px-6 rounded-2xl text-xs transition duration-300 uppercase tracking-wider">
+                Start Free Trial
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-24 text-center relative">
+        <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-72 h-72 bg-purple-300/20 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-24 left-1/4 w-96 h-96 bg-indigo-300/10 rounded-full blur-3xl -z-10"></div>
+        
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-bold text-indigo-700 mb-6 uppercase tracking-wider">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Powered by Gemini 1.5 Pro AI
+        </span>
+        <h1 class="text-4xl md:text-6xl font-outfit font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl mx-auto">
+            Automate Invoice Data Entry <br><span class="gradient-text">100% Accurately in Google Sheets</span>
+        </h1>
+        <p class="text-slate-500 text-base md:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+            No manual typing, no static layout templates. Scan invoice photos, PDFs, and instantly extract line items, reconcile bank transactions, and sync tax info in 5 seconds.
+        </p>
+        
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#pricing" class="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-purple-600 hover:shadow-xl hover:shadow-indigo-200 text-white font-extrabold py-4 px-10 rounded-2xl transition duration-300 text-sm tracking-wide">
+                START FREE TRIAL
+            </a>
+            <a href="#workflow" class="w-full sm:w-auto bg-white border border-slate-200 hover:border-slate-300 text-slate-700 font-bold py-4 px-10 rounded-2xl transition duration-300 text-sm flex items-center justify-center gap-2">
+                <i class="fa-regular fa-circle-play text-indigo-500"></i> Watch Workflow
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Features Section -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-outfit font-extrabold text-slate-900">Key Features Built for SaaS</h2>
+            <p class="text-slate-400 mt-2">Simplifying your accounting and spreadsheet workflows.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-3xl p-8 border border-indigo-50 shadow-sm hover:shadow-md transition duration-300 flex flex-col gap-4">
+                <div class="h-12 w-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">No-Template Gemini AI OCR</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    AI understands layout-free documents (receipts, standard invoices, scanned PDFs) to pull invoice numbers, dates, customer names, and total amounts accurately without mapping fields.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-3xl p-8 border border-indigo-50 shadow-sm hover:shadow-md transition duration-300 flex flex-col gap-4">
+                <div class="h-12 w-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-code-compare"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">Auto Bank Reconciliation</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Automatically cross-matches invoice transaction amounts with your local bank statement logs to flag matching bank transfers (MATCH) or discrepancies (MISMATCH) instantly.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-3xl p-8 border border-indigo-50 shadow-sm hover:shadow-md transition duration-300 flex flex-col gap-4">
+                <div class="h-12 w-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">1-Click e-Invoice Sync</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Built-in support to issue and sync legal e-Invoices with MISA MeInvoice, VNPT, Viettel SInvoice, and EasyInvoice portals, saving up to 95% of manual filing overhead.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow section -->
+    <section id="workflow" class="bg-slate-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">3-STEP WORKFLOW</span>
+                <h2 class="text-3xl font-outfit font-extrabold mt-2 text-white">How It Works</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Step 1 -->
+                <div class="space-y-4 text-center">
+                    <div class="h-14 w-14 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xl font-bold mx-auto text-indigo-400">1</div>
+                    <h3 class="text-lg font-bold">Drop Files in Google Drive</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs mx-auto">
+                        Save photo receipts or digital e-invoice PDF files in your linked Google Drive input folder.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="space-y-4 text-center">
+                    <div class="h-14 w-14 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xl font-bold mx-auto text-indigo-400">2</div>
+                    <h3 class="text-lg font-bold">Scan Invoice via AI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs mx-auto">
+                        Click "Scan Invoice AI" on the Google Sheets sidebar panel. Gemini extracts the data and lists it in a staging tab.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="space-y-4 text-center">
+                    <div class="h-14 w-14 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xl font-bold mx-auto text-indigo-400">3</div>
+                    <h3 class="text-lg font-bold">Approve & Reconcile</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs mx-auto">
+                        Review the scanned rows, click "Approve & Sync" to push them to your primary journal and issue e-invoices instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-outfit font-extrabold text-slate-900">License Subscriptions</h2>
+            <p class="text-slate-400 mt-2">Free trial, flexible upgrades, automatic QR invoice payments.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Plan Standard -->
+            <div class="bg-white rounded-[2.5rem] p-8 border border-slate-200 shadow-sm flex flex-col gap-6 relative">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Standard</h3>
+                    <p class="text-slate-400 text-xs mt-1">Basic plan for solo entrepreneurs</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-4xl font-extrabold text-slate-900">99,000đ</span>
+                    <span class="text-slate-400 text-sm">/month</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm my-4">
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Standard Automation</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Custom columns mapping</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Email support ticket channel</li>
+                </ul>
+                <button class="w-full bg-slate-900 hover:bg-black text-white font-bold py-3.5 px-6 rounded-2xl text-xs mt-auto transition duration-300 uppercase tracking-widest">
+                    Subscribe Standard
+                </button>
+            </div>
+
+            <!-- Plan Pro -->
+            <div class="bg-blue-50/50 rounded-[2.5rem] p-8 border-2 border-indigo-500 shadow-md flex flex-col gap-6 relative">
+                <span class="absolute -top-3.5 right-6 bg-indigo-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">POPULAR</span>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-950">Pro 🚀</h3>
+                    <p class="text-indigo-600/70 text-xs mt-1">Best for small & medium businesses</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-4xl font-extrabold text-indigo-950">169,000đ</span>
+                    <span class="text-indigo-600/70 text-sm">/month</span>
+                </div>
+                <ul class="space-y-3 text-indigo-950 text-sm my-4">
+                    <li><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> <strong>150 OCR scans / month</strong></li>
+                    <li><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Automated loop (every 5 mins)</li>
+                    <li><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Dashboard & Bank reconciliation</li>
+                    <li><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> 1-to-1 priority setup support</li>
+                </ul>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-6 rounded-2xl text-xs mt-auto transition duration-300 uppercase tracking-widest shadow-lg shadow-indigo-150">
+                    Upgrade to Pro
+                </button>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="bg-white rounded-[2.5rem] p-8 border border-slate-200 shadow-sm flex flex-col gap-6 relative">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Premium ⭐</h3>
+                    <p class="text-slate-400 text-xs mt-1">Unlimited operations for scaling teams</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-4xl font-extrabold text-slate-900">299,000đ</span>
+                    <span class="text-slate-400 text-sm">/month</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm my-4">
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> <strong>400 OCR scans / month</strong></li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Automated loop (every 1 min)</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Unlock all E-Invoice sync adapters</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> 24/7 prioritized developer support</li>
+                </ul>
+                <button class="w-full bg-slate-900 hover:bg-black text-white font-bold py-3.5 px-6 rounded-2xl text-xs mt-auto transition duration-300 uppercase tracking-widest">
+                    Subscribe Premium
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-100 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm">E</div>
+                <span class="font-outfit font-extrabold text-lg tracking-tight text-slate-900">Effortless Flow</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 font-semibold">
+                 <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+                 <a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a>
+                 <a href="privacy_en.html" class="hover:text-indigo-600 transition">Privacy Policy</a>
+                 <a href="mailto:support@easyinvoice-addons.local" class="hover:text-indigo-600 transition">Support</a>
+            </div>
+            <p class="text-xs text-slate-400">&copy; 2026 Effortless Flow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
