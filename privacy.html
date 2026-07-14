@@ -20,10 +20,12 @@
     <header class="w-full bg-white border-b border-slate-100 py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
         <div class="flex items-center gap-3">
             <div class="h-8 w-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm">E</div>
-            <span class="font-bold text-slate-900 text-sm">Effortless Flow</span>
+            <span class="font-bold text-slate-900 text-sm">Effortless Flow™</span>
         </div>
         <div class="flex items-center gap-3 text-xs font-semibold">
             <a href="index.html" class="text-slate-500 hover:text-indigo-600 transition">Trang chủ</a>
+            <span class="text-slate-300">|</span>
+            <a href="terms.html" class="text-slate-500 hover:text-indigo-600 transition">Điều khoản dịch vụ</a>
             <span class="text-slate-300">|</span>
             <div class="flex items-center gap-1.5">
                 <span class="text-xs font-bold text-indigo-600">VI</span>
@@ -58,14 +60,14 @@
                     2. Dữ liệu người dùng Google được truy cập (Data Accessed)
                 </h2>
                 <p class="text-slate-600 leading-relaxed">
-                    Để thực hiện các chức năng tự động hóa và trích xuất dữ liệu hóa đơn, Effortless Flow yêu cầu quyền truy cập vào các dữ liệu cụ thể sau từ tài khoản Google của bạn thông qua các OAuth Scopes:
+                    Để thực hiện các chức năng tự động hóa và trích xuất dữ liệu hóa đơn, Effortless Flow™ yêu cầu quyền truy cập vào các dữ liệu cụ thể sau từ tài khoản Google của bạn thông qua các OAuth Scopes:
                 </p>
                 <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
-                    <li><strong>Google Sheets (Quyền spreadsheets)</strong>: Ứng dụng đọc danh sách tệp hóa đơn và cấu hình thư mục, đồng thời ghi trực tiếp dữ liệu hóa đơn (số hóa đơn, ngày tháng, tổng tiền, chi tiết mặt hàng...) đã trích xuất vào trang tính đang hoạt động của bạn.</li>
-                    <li><strong>Google Documents (Quyền documents)</strong>: Ứng dụng truy cập để đọc mẫu văn bản và tự động tạo mới các tệp văn bản/PDF xuất bản từ thông tin dòng hóa đơn được bạn phê duyệt.</li>
-                    <li><strong>Google Drive (Quyền drive hoặc drive.readonly)</strong>: Ứng dụng đọc dữ liệu tệp hình ảnh/PDF của hóa đơn lưu trữ trong thư mục quét đầu vào (do bạn tự chỉ định) và ghi tệp kết quả sau khi xử lý.</li>
-                    <li><strong>Dịch vụ Gmail (Quyền script.send_mail)</strong>: Ứng dụng sử dụng dịch vụ thư để tự động gửi thông báo báo cáo tiến trình xử lý, đối soát và thông báo lỗi hệ thống trực tiếp đến hòm thư của bạn. Ứng dụng <strong>không đọc, không truy cập và không thu thập</strong> bất kỳ email nào trong hộp thư đến của bạn.</li>
-                    <li><strong>Dịch vụ Kết nối ngoại vi (Quyền script.external_request)</strong>: Ứng dụng kết nối Internet để gọi API Gemini OCR an toàn của Google và xác thực khóa bản quyền (License Key) trên máy chủ của chúng tôi.</li>
+                    <li><strong>Google Sheets™ (Quyền spreadsheets)</strong>: Ứng dụng đọc danh sách tệp hóa đơn và cấu hình thư mục, đồng thời ghi trực tiếp dữ liệu hóa đơn (số hóa đơn, ngày tháng, tổng tiền, chi tiết mặt hàng...) đã trích xuất vào trang tính đang hoạt động của bạn.</li>
+                    <li><strong>Google Docs™ (Quyền documents)</strong>: Ứng dụng truy cập để đọc mẫu văn bản và tự động tạo mới các tệp văn bản/PDF xuất bản từ thông tin dòng hóa đơn được bạn phê duyệt.</li>
+                    <li><strong>Google Drive™ (Quyền drive hoặc drive.readonly)</strong>: Ứng dụng đọc dữ liệu tệp hình ảnh/PDF của hóa đơn lưu trữ trong thư mục quét đầu vào (do bạn tự chỉ định) và ghi tệp kết quả sau khi xử lý.</li>
+                    <li><strong>Dịch vụ Gmail™ (Quyền script.send_mail)</strong>: Ứng dụng sử dụng dịch vụ thư để tự động gửi thông báo báo cáo tiến trình xử lý, đối soát và thông báo lỗi hệ thống trực tiếp đến hòm thư của bạn. Ứng dụng <strong>không đọc, không truy cập và không thu thập</strong> bất kỳ email nào trong hộp thư đến của bạn.</li>
+                    <li><strong>Dịch vụ Kết nối ngoại vi (Quyền script.external_request)</strong>: Ứng dụng kết nối Internet để gọi API Gemini™ OCR an toàn của Google và xác thực khóa bản quyền (License Key) trên máy chủ của chúng tôi.</li>
                 </ul>
             </section>
 
@@ -78,7 +80,7 @@
                     Chúng tôi xử lý dữ liệu của bạn dựa trên các nguyên tắc minh bạch sau:
                 </p>
                 <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
-                    <li>Dữ liệu hóa đơn dạng hình ảnh/PDF từ Google Drive của bạn được chuyển đổi tạm thời thành luồng dữ liệu nhị phân (Binary stream) để truyền trực tiếp đến API Google Gemini thực hiện nhận diện OCR.</li>
+                    <li>Dữ liệu hóa đơn dạng hình ảnh/PDF từ Google Drive™ của bạn được chuyển đổi tạm thời thành luồng dữ liệu nhị phân (Binary stream) để truyền trực tiếp đến API Google Gemini™ thực hiện nhận diện OCR.</li>
                     <li>Dữ liệu văn bản trả về từ API Gemini chỉ được sử dụng để phân tích cấu trúc cột, đối chiếu dòng dữ liệu ngân hàng của bạn và điền vào các bảng tính do bạn chọn.</li>
                     <li>Chúng tôi chỉ sử dụng thông tin tài khoản email của bạn để gửi thông báo hoạt động và xác thực gói bản quyền sử dụng.</li>
                 </ul>
@@ -90,7 +92,7 @@
                     4. Lưu trữ dữ liệu (Data Storage)
                 </h2>
                 <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
-                    <li><strong>Nguyên tắc không lưu trữ tệp (Zero-File Retention)</strong>: Chúng tôi không sở hữu, không sao chép, không tải về và không lưu trữ bất kỳ tệp dữ liệu hóa đơn nào của bạn trên máy chủ ngoại vi. Mọi tệp tin đều nằm trực tiếp và duy nhất trong Google Drive cá nhân của bạn.</li>
+                    <li><strong>Nguyên tắc không lưu trữ tệp (Zero-File Retention)</strong>: Chúng tôi không sở hữu, không sao chép, không tải về và không lưu trữ bất kỳ tệp dữ liệu hóa đơn nào của bạn trên máy chủ ngoại vi. Mọi tệp tin đều nằm trực tiếp và duy nhất trong Google Drive™ cá nhân của bạn.</li>
                     <li>Dữ liệu cấu hình hệ thống (như ID thư mục Drive, ID hóa đơn) được lưu trữ an toàn trong không gian thuộc tính cá nhân của người dùng (UserProperties) do Google quản lý.</li>
                 </ul>
             </section>
@@ -114,7 +116,7 @@
                     6. Quyền kiểm soát của người dùng
                 </h2>
                 <p class="text-slate-600 leading-relaxed">
-                    Bạn có toàn quyền gỡ bỏ cài đặt ứng dụng Effortless Flow khỏi Google Workspace của bạn bất kỳ lúc nào. Khi gỡ cài đặt, toàn bộ cấu hình lưu trữ cá nhân liên quan sẽ tự động xóa sạch khỏi hệ thống tài khoản của bạn.
+                    Bạn có toàn quyền gỡ bỏ cài đặt ứng dụng Effortless Flow™ khỏi Google Workspace™ của bạn bất kỳ lúc nào. Khi gỡ cài đặt, toàn bộ cấu hình lưu trữ cá nhân liên quan sẽ tự động xóa sạch khỏi hệ thống tài khoản của bạn.
                 </p>
             </section>
 
@@ -134,7 +136,8 @@
         </main>
 
         <footer class="text-center text-xs text-slate-400 mt-12">
-            <p>&copy; 2026 Effortless Flow. Bảo lưu mọi quyền.</p>
+            <p>&copy; 2026 Effortless Flow™. Bảo lưu mọi quyền.</p>
+            <p class="mt-1 text-[10px]">Google Sheets™, Google Drive™, Google Docs™ và Google Workspace™ là các thương hiệu của Google LLC. Gemini™ là thương hiệu của Google LLC.</p>
         </footer>
     </div>
 </body>
