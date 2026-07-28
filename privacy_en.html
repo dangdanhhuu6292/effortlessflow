@@ -65,7 +65,7 @@
                 <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
                     <li><strong>Google Sheets™ (spreadsheets scope)</strong>: The application reads configuration data and automatically writes extracted invoice metadata (such as invoice number, date, amount, vendor details, and items) directly into your active spreadsheets.</li>
                     <li><strong>Google Documents (documents scope)</strong>: The application accesses template documents to read structure and automatically generates/writes new document drafts or PDF invoice exports from row details approved by you.</li>
-                    <li><strong>Google Drive™ (drive or drive.readonly scope)</strong>: The application accesses files (raw invoice images and PDF scans) stored inside your designated Google Drive™ folder for OCR processing and saves the output logs.</li>
+                    <li><strong>Google Drive™ (drive scope)</strong>: The application accesses files (raw invoice images and PDF scans) stored inside your designated Google Drive™ folder for OCR processing, creates document copies, and saves the output logs.</li>
                     <li><strong>Gmail Service (script.send_mail scope)</strong>: The application utilizes Google's mailing service to send automated processing reports, billing receipts, and status logs to your email address. The application <strong>does not read, retrieve, or collect</strong> any incoming emails in your inbox.</li>
                     <li><strong>External Network Request (script.external_request scope)</strong>: The application connects to external servers to call the secure Google Gemini API for OCR analysis and to validate subscription licenses.</li>
                 </ul>
@@ -113,7 +113,20 @@
             <section class="space-y-3">
                 <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
                     <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
-                    6. User Rights and Controls
+                    6. Google API Limited Use Disclosure
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Our app's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" class="text-indigo-600 underline hover:text-indigo-800">Google API Services User Data Policy</a>, including the Limited Use requirements.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    The use of raw or derived user data received from Workspace APIs will adhere to the Google User Data Policy, including the Limited Use requirements. Under these requirements, we strictly prohibit using, transferring, or selling Google user data—including raw, aggregated, or derived data—to create, train, or improve foundational or generalized machine learning and artificial intelligence models.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
+                    7. User Rights and Controls
                 </h2>
                 <p class="text-slate-600 leading-relaxed">
                     You have complete control over your credentials and can uninstall the Effortless Flow Add-on from your Google Workspace™ dashboard at any time. Once uninstalled, all locally saved credentials and configurations are permanently erased.
@@ -123,7 +136,7 @@
             <section class="space-y-3">
                 <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
                     <span class="h-6 w-1.5 bg-indigo-600 rounded-full"></span>
-                    7. Support Contacts
+                    8. Support Contacts
                 </h2>
                 <p class="text-slate-600 leading-relaxed">
                     If you have questions regarding this policy or the add-on data interaction, please reach out via:
