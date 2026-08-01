@@ -65,7 +65,7 @@
                 <ul class="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
                     <li><strong>Google Sheets™ (spreadsheets scope)</strong>: The application reads configuration data and automatically writes extracted invoice metadata (such as invoice number, date, amount, vendor details, and items) directly into your active spreadsheets.</li>
                     <li><strong>Google Documents (documents scope)</strong>: The application accesses template documents to read structure and automatically generates/writes new document drafts or PDF invoice exports from row details approved by you.</li>
-                    <li><strong>Google Drive™ (drive scope)</strong>: The application accesses files (raw invoice images and PDF scans) stored inside your designated Google Drive™ folder for OCR processing, creates document copies, and saves the output logs.</li>
+                    <li><strong>Google Drive™ (drive.file scope)</strong>: The application only accesses specific folders and files created by this app (such as the default template document and the generated invoice PDFs) to edit, copy, and export them.</li>
                     <li><strong>Gmail Service (script.send_mail scope)</strong>: The application utilizes Google's mailing service to send automated processing reports, billing receipts, and status logs to your email address. The application <strong>does not read, retrieve, or collect</strong> any incoming emails in your inbox.</li>
                     <li><strong>External Network Request (script.external_request scope)</strong>: The application connects to external servers to call the secure Google Gemini API for OCR analysis and to validate subscription licenses.</li>
                 </ul>
